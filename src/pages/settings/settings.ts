@@ -10,12 +10,12 @@ import { RedditPage } from '../reddit/reddit'
 export class SettingsPage {
 
   category: any;
-	limit: any;
+  limit: any;
   constructor(public navCtrl: NavController, private redditService: RedditService) {
-  	this.getDefault();
+  	this.getDefaults();
   }
 
-  getDefault(){
+  getDefaults(){
   	if(localStorage.getItem('category') != null){
   		this.category = localStorage.getItem('category');
   	} else{

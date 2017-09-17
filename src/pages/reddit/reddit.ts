@@ -11,8 +11,8 @@ export class RedditPage {
 	items: any;
 	category: any;
 	limit: any;
-  constructor(public navCtrl: NavController, private redditService: RedditService) {
-  	this.getDefault();
+  constructor(public navCtrl: NavController, public redditService: RedditService) {
+  	this.getDefaults();
   }
 
   ngOnInit(){
@@ -20,7 +20,7 @@ export class RedditPage {
   }
 
   
-  getDefault(){
+  getDefaults(){
   	if(localStorage.getItem('category') != null){
   		this.category = localStorage.getItem('category');
   	} else{
