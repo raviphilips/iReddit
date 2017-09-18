@@ -11,7 +11,7 @@ export class SettingsPage {
 
   category: any;
   limit: any;
-  constructor(public navCtrl: NavController, private redditService: RedditService) {
+  constructor(public navCtrl: NavController, public redditService: RedditService) {
   	this.getDefaults();
   }
 
@@ -30,8 +30,8 @@ export class SettingsPage {
   }
  
  setDefaults(){
- 	localStorage.setitem('category', this.category);
- 	localStorage.setitem('limit', this.limit);
+ 	localStorage.setItem('category', this.category);
+ 	localStorage.setItem('limit', this.limit);
  	this.navCtrl.push(RedditPage);
  }
 
