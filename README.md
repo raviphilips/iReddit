@@ -24,3 +24,9 @@ $ ionic cordova run ios
 
 Substitute ios for android if not on a Mac.
 
+<p align="center">
+<img src="screenshots/1.png" />
+</p>
+<img src="screenshots/2.png" align="right" />
+
+<img src="screenshots/3.png" />
